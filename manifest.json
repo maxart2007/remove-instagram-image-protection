@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Image Overlay Remover",
+  "version": "1.0",
+  "description": "Removes overlay divs from Instagram images so they can be saved.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*", "http://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": []
+}
